@@ -17,5 +17,5 @@ steps:
  - task: CopyFiles@2
    inputs:
      SourceFolder: 'https://github.com/pradeesh2610/newsample1/'
-     Contents: ''
+     Contents: 'sample1.jmx'
      TargetFolder: 'https://dev.azure.com/vprad/Sample%20Perf1/_git/JmeterFiles'
