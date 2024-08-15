@@ -1,21 +1,2 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- main
-
+stages:
 pool: LocalPool1
-
-steps:
- - checkout: self
-
- - script: |
-    curl -o sample1.jmx https://github.com/pradeesh2610/newsample1/sample1.jmx
-   displayName: copy scripts
- - task: CopyFiles@2
-   inputs:
-     SourceFolder: 'https://github.com/pradeesh2610/newsample1/'
-     Contents: 'sample1.jmx'
-     TargetFolder: 'https://dev.azure.com/vprad/Sample%20Perf1/_git/JmeterFiles'
