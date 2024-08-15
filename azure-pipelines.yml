@@ -9,4 +9,4 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     artifactName: 'pradeesh2610/newsample1'  # Name of the artifact published in the previous job
-    path: '$(Pipeline.Workspace)/downloaded-files'  # Path to download the files to
+    path: 'C:/Softwares'  # Path to download the files to
