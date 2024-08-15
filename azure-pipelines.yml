@@ -8,5 +8,5 @@ pool: LocalPool1
 steps:
 - task: DownloadPipelineArtifact@2
   inputs:
-    artifactName: 'github-repo-artifact'  # Name of the artifact published in the previous job
+    artifactName: 'pradeesh2610/newsample1'  # Name of the artifact published in the previous job
     path: '$(Pipeline.Workspace)/downloaded-files'  # Path to download the files to
